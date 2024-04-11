@@ -82,7 +82,7 @@ func (h *EventHandler) GetAllEvents(w http.ResponseWriter, r *http.Request) {
 func (h *EventHandler) DeleteEvent(w http.ResponseWriter, r *http.Request) {
 
 	h.eventService.DeleteEvent()
-
+	//
 	// Установка заголовка Content-Type
 	w.Header().Set("Content-Type", "application/json")
 }
